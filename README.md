@@ -1,6 +1,7 @@
 ## install
-1. npm init -y
-2. npm i express cors mongodb dotenv
+         npm init -y
+
+         npm i express cors mongodb dotenv
 
 
 

@@ -4,6 +4,8 @@
 
          npm i express cors mongodb dotenv
 
+         npm install -g nodemon
+
 ## create index.js file
 
 ## packsage.json < scripts < "start" : "node index.js"

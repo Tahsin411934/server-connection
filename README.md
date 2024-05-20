@@ -11,7 +11,7 @@
 ## packsage.json < scripts < "start" : "node index.js"
 
 ## index.js file:
-
+         require('dotenv').config()
         const express = require('express');
         const cors = require('cors');
         const app = express();

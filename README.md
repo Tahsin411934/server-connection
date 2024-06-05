@@ -165,3 +165,27 @@
                     });
                 }
         })
+
+        axios: 
+                 const response = await axios.put(`https://tourism-management-website-server-beta.vercel.app/touristSpots/${updateSpot._id}`, data, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+
+        if (response.data.error) {
+            // If there is an error, show SweetAlert2 error message
+            Swal.fire({
+                title: 'Error!',
+                text: response.data.error,
+                icon: 'error',
+                confirmButtonText: 'Ok'
+            });
+        } else {
+            // If successful, show success message
+            Swal.fire({
+                title: 'Success!',
+                text: 'Tourist spot updated successfully',
+                icon: 'success',
+                confirmButtonText: 'Ok'
+            });
